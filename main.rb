@@ -2,6 +2,8 @@
 require 'active_record'
 require 'pry'
 
+require_relative 'models'
+
 puts "Establishing connection..."
 
 ActiveRecord::Base.establish_connection({
@@ -10,5 +12,6 @@ ActiveRecord::Base.establish_connection({
 })
 
 puts "Connected!"
+
 
 binding.pry
