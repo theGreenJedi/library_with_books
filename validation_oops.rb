@@ -19,9 +19,12 @@ book = Book.new(
 
 begin
   puts "Getting ready to save!"
-  # This will raise an exception because the book
-  # fails its validation check.
-  book.save!
+
+  # COMMON MISTAKE: The validation will fail, but no
+  # exception will be raised.  Why?  Because the developer
+  # should have invoked #save! instead of #save .  So,
+  # the data never makes it to the database!!!
+  book.save
 
   puts "  The save was successful!"
 rescue ActiveRecord::RecordInvalid
