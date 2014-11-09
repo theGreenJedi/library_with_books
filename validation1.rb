@@ -21,7 +21,7 @@ begin
   puts "Getting ready to save!"
   # This will raise an exception because the book
   # fails its validation check.
-  invalid_book.save!
+  book.save!
 
   puts "  The save was successful!"
 rescue
