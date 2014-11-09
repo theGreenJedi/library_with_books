@@ -1,17 +1,21 @@
-
-require_relative 'models'
+# Connect to the database
 require_relative 'connect'
 
-# It's invalid because it's
-# publication date isn't an Integer
-invalid_book = Book.new(
-  title: "Fancy Title"
+# Load the models
+require_relative 'models'
+
+# This Book is invalid because its #publication_date
+# is not an Integer.
+book = Book.new(
+  title: "Fancy Title",
+  publication_date: "today"
 )
 
 
 begin
   puts "Getting ready to save!"
-  # This will raise an exception
+  # This will raise an exception because the book
+  # fails its validation check.
   invalid_book.save!
 
   puts "The save was successful!"
@@ -20,5 +24,5 @@ rescue
 end
 
 
-puts "Is the book actually valid? #{invalid_book.valid?}"
-
+# Does the book think that it's valid?
+puts "Is the book actually valid? #{ book.valid? }"
