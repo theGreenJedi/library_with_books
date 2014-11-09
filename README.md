@@ -39,3 +39,18 @@ If you see a listing of books, then the database has been initialized correctly!
 
     .quit
 
+## Executing Scripts ##
+
+Each of the scripts should be executed through the ```bundle exec``` command to ensure that the proper dependencies are loaded beforehand.  For instance:
+
+    bundle exec ruby ./pry.rb
+
+The following scripts are currently available:
+
+| Script  | What does it do? |
+--------- | -----------------------
+| pry.rb | Connects to the database, loads the models, and launches a PRY console |
+| validation1.rb | Demonstrates the behavior of the ```#save!``` method |
+| validation2.rb | Demonstrates the behavior of the ```#save``` method |
+| validation_oops.rb | Demonstrates why it's important to understand the difference between ```#save``` and ```#save!```. |
+
