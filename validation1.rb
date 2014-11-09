@@ -1,3 +1,8 @@
+####################################################
+# This script demonstrates the behavior of the
+# #save! method when an object is invalid.
+####################################################
+
 # Connect to the database
 require_relative 'lib/connect'
 

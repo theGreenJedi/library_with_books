@@ -1,3 +1,8 @@
+####################################################
+# This script connects to the database, loads the
+# models, and drops you into a PRY console.
+####################################################
+
 
 require 'pry'
 
