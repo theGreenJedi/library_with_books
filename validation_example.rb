@@ -1,8 +1,8 @@
 # Connect to the database
-require_relative 'connect'
+require_relative 'lib/connect'
 
 # Load the models
-require_relative 'models'
+require_relative 'lib/models'
 
 # This Book is invalid because its #publication_date
 # is not an Integer.
