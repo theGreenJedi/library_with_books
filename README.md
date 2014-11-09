@@ -1,6 +1,7 @@
 
-### Installation ###
+## Installation ##
 
+### Obtain the Dependencies ###
 
 Although you could install all of the dependencies manually, it's much easier to just use the ```bundle``` command.  Ensure that you have the ```bundle``` command installed by running the following command:
 
@@ -12,7 +13,7 @@ Now, run the following command from this project's root directory:
 
 And that's it!  All of the dependencies have been installed!
 
-### Database Setup ###
+### Setup the Database ###
 
 Run the following command from inside this project's root directory:
 
