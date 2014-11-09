@@ -22,10 +22,16 @@ puts "Getting ready to save"
 # Attempt to save the book.  The #save method
 # will return false if the save failed.
 if book.save
-  puts "The save was successful!"
+  puts "  The save was successful!"
 else
-  puts "The save failed :'("
+  puts "  The save failed :'("
 end  
 
-# Does the book think that it's valid?
-puts "Is the book actually valid? #{ book.valid? }"
+
+
+puts "Does the book that think it's valid?"
+if book.valid?
+  puts "  Yup!"
+else
+  puts "  Nope!  Here are the errors: #{ book.errors.messages }"
+end
