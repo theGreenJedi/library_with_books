@@ -8,4 +8,9 @@ class Book < ActiveRecord::Base
   validates :publication_date,
             numericality: {only_integer: true}
 
+
+  belongs_to  :borrower,
+              class_name: "Patron",
+              inverse_of: :checkouts
+
 end

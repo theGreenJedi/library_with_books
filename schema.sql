@@ -14,7 +14,9 @@ CREATE TABLE books (
   id INTEGER PRIMARY KEY,
   title VARCHAR(255),
   publication_date INTEGER,
-  author_id INTEGER
+
+  author_id   INTEGER,
+  borrower_id INTEGER
 );
 
 
