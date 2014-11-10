@@ -9,3 +9,4 @@
 require_relative 'models/book'
 require_relative 'models/author'
 require_relative 'models/patron'
+require_relative 'models/rating'

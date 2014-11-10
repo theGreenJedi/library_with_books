@@ -9,4 +9,11 @@ class Patron < ActiveRecord::Base
             class_name:  "Book",
             foreign_key: :borrower_id
 
+
+  has_many  :ratings
+
+  has_many  :rated_books,
+            through:  :ratings,
+            source:   :book
+
 end

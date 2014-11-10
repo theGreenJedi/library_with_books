@@ -32,3 +32,13 @@ CREATE TABLE genres (
   description VARCHAR(65536)
 );
 
+
+
+CREATE TABLE ratings (
+  id INTEGER PRIMARY KEY,
+  book_id   INTEGER,
+  patron_id INTEGER,
+  stars     INTEGER
+);
+
+

@@ -13,4 +13,7 @@ class Book < ActiveRecord::Base
               class_name: "Patron",
               inverse_of: :checkouts
 
+
+  has_many    :ratings
+
 end
