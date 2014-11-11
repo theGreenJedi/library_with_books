@@ -3,6 +3,10 @@ DROP TABLE IF EXISTS authors;
 DROP TABLE IF EXISTS patrons;
 DROP TABLE IF EXISTS genres;
 DROP TABLE IF EXISTS reviews;
+DROP TABLE IF EXISTS books_patrons;
+DROP TABLE IF EXISTS books_genres;
+DROP TABLE IF EXISTS ratings;
+
 
 CREATE TABLE authors (
   id INTEGER PRIMARY KEY,
@@ -39,5 +43,38 @@ CREATE TABLE reviews (
   patron_id INTEGER,
   book_id INTEGER
 );
+
+
+/*
+  These are the two tables that are being
+  joined.  The names must occur alphabetically.
+*/
+CREATE TABLE books_patrons (
+  id INTEGER PRIMARY KEY,
+  book_id   INTEGER,
+  patron_id INTEGER
+);
+
+
+
+
+
+
+CREATE TABLE books_genres (
+  id INTEGER PRIMARY KEY,
+  book_id  INTEGER,
+  genre_id INTEGER
+);
+
+
+
+CREATE TABLE ratings (
+  id INTEGER PRIMARY KEY,
+  stars      INTEGER,
+
+  book_id    INTEGER,
+  patron_id  INTEGER
+);
+
 
 

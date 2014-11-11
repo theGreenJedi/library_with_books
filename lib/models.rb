@@ -11,3 +11,5 @@ require_relative 'models/author'
 require_relative 'models/genre'
 require_relative 'models/patron'
 require_relative 'models/review'
+require_relative 'models/rating'
+
